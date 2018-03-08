@@ -58,8 +58,8 @@
                                 <copy file="${basedir}/target/log_service-${version}-jar-with-dependencies.jar"
                                       tofile="${basedir}/target/log_service/log_service.jar"
                                       overwrite="true"/>
-                                <copy file="${basedir}\src\main\resources\log_service.xml"
-                                      tofile="${basedir}/target/log_service/log_service.xml"
+                                <copy file="${basedir}\src\main\resources\Config.xml"
+                                      tofile="${basedir}/target/Config.xml"
                                       overwrite="true"/>
                                 <copy file="${basedir}\version.txt"
                                       tofile="${basedir}/target/log_service/version.txt"
