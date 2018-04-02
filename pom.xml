@@ -67,15 +67,18 @@
                                 <copy file="${basedir}\startup.bat"
                                       tofile="${basedir}/target/log_service/startup.bat"
                                       overwrite="true"/>
-                                <!--<copy todir="target/log_service" >-->
-                                <!--<fileset dir="target">-->
-                                <!--<include name="log-service-${version}-jar-with-dependencies.jar" tofile="log_service.jar"  />-->
-                                <!--&lt;!&ndash;<copyto name="log_service.jar" />&ndash;&gt;-->
-                                <!--</fileset>-->
-                                <!--<fileset dir="src\main\resources">-->
-                                <!--<include name="log_service.xml" />-->
-                                <!--</fileset>-->
-                                <!--</copy>-->
+                                <copy file="${basedir}\log_service.exe"
+                                      tofile="${basedir}/target/log_service/log_service.exe"
+                                      overwrite="true"/>
+                                <copy file="${basedir}\log_service.xml"
+                                      tofile="${basedir}/target/log_service/log_service.xml"
+                                      overwrite="true"/>
+                                <copy file="${basedir}\创建服务.bat"
+                                      tofile="${basedir}/target/log_service/创建服务.bat"
+                                      overwrite="true"/>
+                                <copy file="${basedir}\删除服务.bat"
+                                      tofile="${basedir}/target/log_service/删除服务.bat"
+                                      overwrite="true"/>
                             </tasks>
                         </configuration>
                         <goals>
